@@ -3,10 +3,10 @@
 
 using namespace std;
 
-// ������õĻʺ��Ƿ�ȫ
+// 检查放置的皇后是否安全
 bool isSafe(const vector<int>& board, int row, int col) {
     for (int i = 0; i < row; ++i) {
-        //����Ƿ��лʺ���ͬһ�л�Խ���
+        //检查是否有皇后在同一列或对角线上
         if (board[i] == col || abs(board[i] - col) == abs(i - row)) {
             return false;
         }
@@ -14,7 +14,7 @@ bool isSafe(const vector<int>& board, int row, int col) {
     return true;
 }
 
-// ���ݷ����N�ʺ�����
+// 递归解决N皇后问题
 void solveNQueens(int n, int row, vector<int>& board, int& count) {
     if (row == n) {
         
@@ -38,7 +38,7 @@ void solveNQueens(int n, int row, vector<int>& board, int& count) {
 
     for (int col = 0; col < n; ++col) {
         if (isSafe(board, row, col)) {
-            board[row] = col;  // ���ûʺ�
+            board[row] = col;  // 放置皇后
             solveNQueens(n, row + 1, board, count);
         }
     }
@@ -46,16 +46,16 @@ void solveNQueens(int n, int row, vector<int>& board, int& count) {
 
 int main() {
     int n;
-    cout << "������ʺ�ĸ���(N): ";
+    cout << "输入皇后个数(N): ";
     cin >> n;
     cout << endl;
-    cout << "�ʺ�ⷨ��" << endl << endl;
-    vector<int> board(n, 0);  // ��ʼ�����̣������лʺ��ڵ�һ��
+    cout << "皇后解法：" << endl << endl;
+    vector<int> board(n, 0);  // 初始化棋盘，所有皇后在第一行
     int count = 0;
 
     solveNQueens(n, 0, board, count);
 
-    cout << "����" << count <<"�ֽⷨ"<< endl;
+    cout << "共有" << count <<"种解法"<< endl;
 
     return 0;
 }
