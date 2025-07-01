@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "约瑟夫生死游戏", "约瑟夫生死游戏\约瑟夫生死游戏.vcxproj", "{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Debug|x64.ActiveCfg = Debug|x64
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Debug|x64.Build.0 = Debug|x64
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Debug|x86.Build.0 = Debug|Win32
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Release|x64.ActiveCfg = Release|x64
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Release|x64.Build.0 = Release|x64
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Release|x86.ActiveCfg = Release|Win32
+		{3D7C45A3-75B9-43C0-A9BC-0EA5955F785A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA5FC9DB-65AB-431D-BD00-7657E238FA41}
+	EndGlobalSection
+EndGlobal
